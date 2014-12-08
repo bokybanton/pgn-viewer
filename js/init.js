@@ -6,15 +6,6 @@ var init = function() {
 	  pgnEl = $('#pgn');
 
 
-	// opciones del tablero
-		$("#moveranterior").click(function(){
-			game.undo();
-			board.position(game.fen());
-			updateStatus();
-		});
-	// do not pick up pieces if the game is over
-	// only pick up pieces for the side to move
-
 	var onDragStart = function(source, piece, position, orientation) {
 	  if (game.game_over() === true ||
 	      (game.turn() === 'w' && piece.search(/^b/) !== -1) ||
