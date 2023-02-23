@@ -14,3 +14,9 @@ How to?
 - You need a WebServer (no PHP or database needed)
 - Clone this repository on your public_html
 - Go to example.html to check how it works.
+
+To do
+==
+- Intergate with composer.
+- Make it simplier
+- Make more documentation.
